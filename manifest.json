@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Hide 'For You' Tab on Twitter",
+  "version": "1.0",
+  "description": "A simple Chrome extension to hide the 'For You' tab on Twitter's website.",
+  "permissions": [
+    "https://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
